@@ -30,4 +30,4 @@ document.addEventListener('DOMContentLoaded', function() { // code para macheck 
 });
 
 gotoHomepage = () => window.location.href = "./index.html";
-// gotoHomepage = () => window.location.href = "./404.html";
+// gotoAboutpage = () => window.location.href = "./src/pages/about/about.html";

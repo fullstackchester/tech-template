@@ -24,7 +24,7 @@
       <div class="content">
         <h1 class="heading banner-title">TECHNOLYMPICS 2023</h1>
         <p>Hosted by Balagtas National Agricultural High School</p>
-        <button class="main-btn">Learn more</button>
+        <button class="main-btn" id="learn-more-btn">Learn more</button>
       </div>
     </header>
 
@@ -34,6 +34,13 @@
     
     <main>
       <article>
+        <section>
+          <h1 class="heading article-title">2023 Tech-Voc TECHNOLYMPICS</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ornare nunc. Etiam scelerisque urna tellus, sit amet fringilla ipsum laoreet at. Cras eros elit, lacinia ac tempus in, feugiat condimentum est. Maecenas posuere faucibus libero vitae posuere. Sed ac condimentum quam, nec venenatis neque. Ut id bibendum felis, id eleifend augue. Vestibulum posuere nunc at ultrices vehicula. Aliquam eu tincidunt nisl. Etiam rhoncus orci arcu, et fringilla odio sagittis ac. Donec vel cursus enim. Quisque eu tortor id ligula fringilla aliquam non non tortor. Morbi id ipsum odio.</p>
+          <p>Donec ac massa nulla. Proin urna enim, dapibus at pellentesque vitae, placerat et ante. In leo erat, sagittis vitae lorem vitae, lacinia vestibulum augue. Suspendisse eget tortor vitae augue posuere ullamcorper gravida quis mauris. Fusce nec porta felis, id porttitor lacus. Aenean sit amet dolor porttitor, volutpat nunc ut, sagittis quam. Sed volutpat imperdiet nunc. Proin sit amet auctor tortor. Etiam feugiat mauris lectus, a pulvinar magna sollicitudin quis. In sed erat ac tortor posuere posuere. Praesent felis metus, suscipit ac posuere nec, convallis sit amet tortor. Morbi tempor tellus et mauris venenatis, nec dapibus urna placerat. Donec id lorem velit. Proin bibendum lacus vel lectus varius commodo sit amet nec erat. Suspendisse vitae tellus at arcu luctus ultricies. Aenean vitae imperdiet nibh.</p>
+        </section>
+      </article>
+      <article id="scroll-to-article">
         <section>
           <h1 class="heading article-title">We are simply, <span class="main-color">the best</span>.</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ornare nunc. Etiam scelerisque urna tellus, sit amet fringilla ipsum laoreet at. Cras eros elit, lacinia ac tempus in, feugiat condimentum est. Maecenas posuere faucibus libero vitae posuere. Sed ac condimentum quam, nec venenatis neque. Ut id bibendum felis, id eleifend augue. Vestibulum posuere nunc at ultrices vehicula. Aliquam eu tincidunt nisl. Etiam rhoncus orci arcu, et fringilla odio sagittis ac. Donec vel cursus enim. Quisque eu tortor id ligula fringilla aliquam non non tortor. Morbi id ipsum odio.</p>
@@ -56,5 +63,16 @@
      -->
     <script src="./src/components/footer/footer.js"></script>
   </div>
+  <script>
+    var scrollSection = document.getElementById('scroll-to-article');
+    var learnMoreButton = document.getElementById('learn-more-btn');
+    learnMoreButton.addEventListener('click', function(){
+      // window.scrollTo({
+      //     top: scrollTo.offsetTop + 100,
+      //     behavior: 'smooth'
+      // });
+      scrollSection.scrollIntoView({ behavior: 'smooth', top: -200 });
+    })
+  </script>
 </body>
 </html>
