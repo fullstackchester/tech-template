@@ -8,3 +8,8 @@ body, html {
     background-color: #171717;
     color: #EEEEEE;
 }
+
+
+main {
+    min-height: 100vh;
+}

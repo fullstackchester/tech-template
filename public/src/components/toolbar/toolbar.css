@@ -1,0 +1,40 @@
+nav.main-toolbar {
+    border-bottom: 1px solid #404040;
+    background-color: #171717;
+    height: 4rem;
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+span.spacer {
+    flex: 1 1 auto;
+}
+
+span.brand {
+    font-weight: 500;
+}
+
+ul.menu-link {
+    list-style-type: none;
+    display: flex;
+    /* border: 1px solid green; */
+    height: 100%;
+}
+
+ul li.menu-link-item {
+    /* border: 1px solid pink; */
+    padding: 0 1rem;
+    min-width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+ul li.menu-link-item:hover {
+    background-color: #272727;
+}
