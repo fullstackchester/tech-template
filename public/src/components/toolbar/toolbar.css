@@ -8,6 +8,7 @@ nav.main-toolbar {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    visibility: hidden;
 }
 
 span.spacer {
